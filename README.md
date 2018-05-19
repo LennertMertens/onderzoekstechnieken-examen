@@ -4,4 +4,4 @@ Voorbeeldcode over de verschillende hoofdstukken staat steeds onderverdeeld in e
 
 | Hoofdstuk | Beschrijving | Link |
 |---------- |:---------    | -----|
-| H1  | Gebruik van R    | [Indleiding in R](h1/inleiding.R)  |
+| H1  | Gebruik van R    | [Indleiding in R](H1/inleiding.R)  |
