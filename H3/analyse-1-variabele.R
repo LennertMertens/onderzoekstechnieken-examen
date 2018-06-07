@@ -22,6 +22,19 @@ summary(vec)
 #Q3-Q1
 IQR(vec)
 
+#Modus (Belangrijk: enige manier om modus te berekenen)
+library(modeest)
+mvf(table$naam)
+#freq_tab <- table(esoph$agegp) 
+#is hetzelfde als summary(esoph$agegp)
+#which.max(table(esoph$agegp)) 
+# Only works for the case with a single mode
+
+
+
+names(freq_tab)[freq_tab == max(freq_tab)] 
+# Also works for multimodal variables
+
 #----------Variantie----------
 # variantie = 1/n * som(µ-xi)^2
 

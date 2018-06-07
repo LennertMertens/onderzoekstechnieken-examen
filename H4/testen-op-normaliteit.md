@@ -6,7 +6,7 @@ normale verdeling komt.
 1. Construeer een histogram voor de gegevens en bekijk de vorm van de grafiek. Als de
   gegevens bij benadering een normale verdeling hebben, zal de vorm van het histogram een
   klokcurve vormen.
-2. Bereken de intervallen xs, x2s, x3s en bepaal het percentage meetwaarden dat binnen
+2. Bereken de intervallen x+-s, x+-2s, x+-3s en bepaal het percentage meetwaarden dat binnen
   elk van deze intervallen valt. Als de gegevens ongeveer normaal verdeeld zijn, zullen de
   percentages ongeveer gelijk zijn aan respectievelijk 68%, 95% en 99,7%.
 3. Construeer een QQ-plot (normaliteitsplot, zie Definitie 4.4.1) voor de gegevens. Als de

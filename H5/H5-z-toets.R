@@ -1,4 +1,4 @@
-#H5: De z-toets
+#H5: De z-toets Template
 
 #We hebben een steekproef met
 n <- 30     #30 superhelden (steekproefgroote)

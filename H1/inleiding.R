@@ -9,7 +9,7 @@ help("solve")
 source("Commands.R")
 
 #Alles wegschrijven tussen volgende twee commando's
-sink("record.bis")
+sink("record.lis")
 sink()
 
 #R omgeving en workspace
@@ -20,13 +20,25 @@ rm(x,y,foo,bar,laukie, lennie)
 #Toewijzen
 #Vector van cijfers aanmaken en toewijzen aan variabele X
 x<-c(10.4, 5.8,2.2, 63.5)
-x #geeft de vector weer
-x[2] #geeft getal op index 2
+x     #geeft de vector weer
+x[2]  #geeft getal op index 2
 #5.8
 
 #Een CSV file lezen >help(read.csv) #info over options
-read.csv("computers,csv",header=TRUE, sep=",", fill=TRUE)
-#evt in variabele steken
+computers <- read.csv("computers.csv",header=TRUE, sep=",", fill=TRUE)
+#Kolommen gedefinieerd in de dataset
+names(computers)
+#Bijhorende attributes van een dataframe bekijken
+attributes(computers)
+
+#Huidige werkmap bepalen
+getwd()
+#Inhoud van de werkmap bepalen
+dir()
+#Werkmap aanpassen
+setwd("~/onderzoekstechnieken-cursus")
+
+
 
 #Data types
 #Numbers
