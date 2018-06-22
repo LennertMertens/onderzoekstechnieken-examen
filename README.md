@@ -4,8 +4,11 @@ Voorbeeldcode over de verschillende hoofdstukken staat steeds onderverdeeld in e
 
 | Hoofdstuk | Beschrijving | Link |
 |---------- |:---------    | -----|
-| H1  | Gebruik van R    | [Indleiding in R](H1/inleiding.R)  |
+| H1  | Gebruik van R    | [Indleiding in R](H1/)  |
 | H2  | Het onderzoeksproces | |
 | H3 | Analyse op 1 vriabele | [H3-code](H3/) |
 | H4 | Steekproefonderzoek | [H4-code](H4/) |
 | H5 | Toetsingsprocedures | [H5-code](H5/) |
+| H6 | Analyse op 2 variabelen | [H6-code](H6/) |
+| H7 | X²-Test | [H7-code](H7/) |
+| H8 | Tijdsreeksen | [H8-code](H8/) |
