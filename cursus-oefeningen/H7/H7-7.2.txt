@@ -1,0 +1,40 @@
+# Beetje onoverzichtelijk, excuses
+
+survey$Exer <- factor(survey$Exer, levels = c("None", "Some", "Freq"))
+survey$Smoke <- factor(survey$Smoke, levels = c("Never", "Occas", "Regul", "Heavy"))
+
+smoke_exer <- table(survey$Smoke, survey$Exer)
+
+# Tables en grafieken (b, c)
+table(survey$Exer)
+prop.table(survey$Exer)
+prop.table(table(survey$Exer))
+barplot(table(survey$Exer))
+
+smoke_exer
+plot(smoke_exer)
+
+# chi sqr (e)
+smoke_exer_test <- chisq.test(survey$Smoke, survey$Exer)
+
+# Test statistic (e, f, g)
+smoke_exer_test$statistic
+
+alpha <- 0.05
+l <- 	(length(levels(survey$Smoke)) -1) *
+	(length(levels(survey$Exer)) - 1)
+
+g <- qchisq(p = 1 - alpha, df = l)
+g
+
+smoke_exer_test$p.value
+
+# Plot
+x <- seq(0, 15, length = 200)
+plot(x, dchisq(x, l - 1),
+	type = "l", lwd = 2,
+	ylim = c(0, .2)
+	ylab = "density")
+abline(v = smoke_exer_test$statistic, col = 'red')
+abline(v = g)
+qchisq(1 - alpha, df = l - 1)

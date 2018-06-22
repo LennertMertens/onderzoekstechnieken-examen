@@ -1,0 +1,22 @@
+# Bepaal handmatig de regressierechte
+
+resultaten <- read.csv...
+
+mx <- mean(resulataten$Test) 	# Gemiddelde x
+my <- mean(resulataten$Examen) 	# Gemiddelde y
+xx <- resulataten$test - mx    	# x-mx
+yy <- resultaten$Examen - my   	# y-my
+beta_1 <- sum(xx * yy) / sum(xx^2)
+beta_0 <- my - beta_1 * mx
+
+beta_1 = 0.9667
+beta_0 = 0.6333
+
+
+# In R
+
+regressierechte <- lm(resulataten$Examen ~ resulataten$Test)
+plot(resulataten$Test, resulataten$Examen)
+abline(regressierechte, col = 'red')
+
+Cou ~= 6.4444, R ~= 0.9352, R² ~= 0.8747

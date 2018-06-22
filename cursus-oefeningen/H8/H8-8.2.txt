@@ -1,0 +1,53 @@
+# Niet vergeten
+#install.packages("TTR")
+#install.packages("forecast")
+library(TTR)
+library(forecast)
+
+#1
+sma_4 <- SMA(x = data$Omzet, n = 4)
+sma_12 <- SMA(x = data$Omzet, n = 12)
+plot.ts(data$Omzet)
+lines(sma_4, col = 'orange')
+lines(sma_12, col = 'blue')
+
+#2
+tijd <- 1:100
+regression <- lm(data$Omzet ~ tijd)
+abline(regression, col = 'red')
+
+#3
+fc_4 <- forecast(sma_4, h = 10)
+fc_12 <- forecast(sma_12, h = 10)
+plot(fc_4)
+plot(fc_12)
+
+#4
+...
+
+#5
+omzet_ts <- ts(data$Omzet)
+plot.ts(omzet_ts)
+
+#6 (verbetering nodig)
+alpha <- 
+ema <- HoltWinters(omzet_ts, beta = FALSE, gamma = FALSE)
+plot(ema)
+
+#7 (verbetering nodig)
+ema2 <- HoltWinters(omzet_ts, alpha = 0.1, beta = FALSE, gamma = FALSE)
+plot(ema2)
+
+#8
+...
+
+#9 (verbetering nodig)
+dema <- HoltWinters(omzet_ts, gamma = FALSE)
+
+
+# Kolom toevoegen
+data$naamnieuwekolom <- c(data)
+
+#Driedubelle HoltWinters
+HoltWinters(data)
+
