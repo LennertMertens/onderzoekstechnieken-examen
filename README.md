@@ -1,9 +1,5 @@
 # onderzoekstechnieken-examen
 
-### AANDACHT: Niet delen zonder toestemming, niet alles is gemaakt door mij en ik bezit niet het recht om al deze dingen te delen ###
-
-
-
 Voorbeeldcode over de verschillende hoofdstukken staat steeds onderverdeeld in een map per hoofdstuk
 
 | Hoofdstuk | Beschrijving | Link |
